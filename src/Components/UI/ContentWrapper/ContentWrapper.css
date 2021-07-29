@@ -1,0 +1,34 @@
+.content-wrapper {
+   padding: 0;
+   width: 90%;
+   padding: 10px;
+   border: 1px solid red;
+   margin: 0 auto;
+   margin-top: 20px;
+}
+
+.content-wrapper h1,
+h2,
+h3,
+h4,
+h5 {
+   padding: 10px 10px 0 10px;
+}
+
+.content-wrapper p {
+   font-size: 15px;
+   padding: 10px;
+}
+
+.font-type-wrapper {
+   width: 80%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 0 auto;
+}
+
+.content-wrapper h2 {
+   color: #d5d8dc;
+   text-align: center;
+}

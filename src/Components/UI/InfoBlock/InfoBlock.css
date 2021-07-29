@@ -1,0 +1,11 @@
+.info-block {
+   display: block;
+   border: 3px solid #1d2671;
+   border-radius: 50px;
+}
+
+.font-type {
+   width: 40%;
+   padding: 20px;
+   margin-top: 30px;
+}

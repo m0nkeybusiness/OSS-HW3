@@ -1,0 +1,24 @@
+.menu__item {
+   width: 70%;
+   height: 70px;
+   border: 1px solid black;
+   background-color: #3cb371;
+   margin-left: 50px;
+}
+
+.menu__item a {
+   font-size: 17px;
+   color: #483d8b;
+   margin: 0 auto;
+   padding: 0;
+   text-align: center;
+   display: block;
+   text-decoration: none;
+   padding: 15px;
+   font-weight: bold;
+}
+
+.menu__item a:hover {
+   color: white;
+   cursor: pointer;
+}

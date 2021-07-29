@@ -1,0 +1,17 @@
+.btn_wrapper {
+   padding: 30px 0 20px 0;
+   margin: 0 auto;
+   width: 15%;
+}
+
+.btn_wrapper button {
+   display: block;
+   margin: 0 auto;
+   padding: 15px;
+   border-radius: 50px;
+   width: 150px;
+   background-color: #eb0fc6;
+   color: #ffffff;
+   font-size: 14px;
+   font-weight: bold;
+}
