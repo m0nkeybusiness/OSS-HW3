@@ -6,6 +6,7 @@ import InfoBlock from './Components/UI/InfoBlock';
 import Button from './Components/Task3/Button';
 import NotificationComponent from './Components/Task2/NotificationComponent';
 import data from './data/data.json';
+import ChessBoard from './Components/Task5/ChessBoard';
 
 const showMessageHandler = (e) => {
    e.target.parentElement.style.display = 'none';
@@ -65,6 +66,9 @@ const App = () => {
             <NotificationComponent notificationType={'Success'} />
             <NotificationComponent notificationType={'Warning'} />
             <NotificationComponent notificationType={'Notification'} />
+         </ContentWrapper>
+         <ContentWrapper>
+            <ChessBoard />
          </ContentWrapper>
       </div>
    );
