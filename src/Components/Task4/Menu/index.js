@@ -1,21 +1,37 @@
 import React from 'react';
 import MenuItem from '../MenuItem';
 import MenuInfoBlock from '../MenuInfoBlock';
+import data from '../../../data/data.json';
 import './Menu.css';
 
-const Menu = () => {
-   const menuTexts = ['Главная', 'Статьи', 'О нас', 'Контакты'];
-   const linkAchors = ['main_page', 'article', 'about', 'contacts'];
-   return (
-      <nav className="menu_wrapper">
-         <ul className="menu">
-            {menuTexts.map((listItem, index) => (
-               <MenuItem linkText={listItem} linkUrl={linkAchors[index]} />
-            ))}
-         </ul>
-         <MenuInfoBlock />
-      </nav>
-   );
-};
+class Menu extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         element: '',
+      };
+   }
+
+   getElement = (element) => {
+      this.setState({ element });
+   };
+
+   render() {
+      return (
+         <nav className="menu_wrapper">
+            <ul className="menu">
+               {data.menu.map((listItem, idx) => (
+                  <MenuItem
+                     linkText={listItem.title}
+                     key={idx}
+                     getElementHandler={this.getElement}
+                  />
+               ))}
+            </ul>
+            <MenuInfoBlock passElement={this.state.element} />
+         </nav>
+      );
+   }
+}
 
 export default Menu;

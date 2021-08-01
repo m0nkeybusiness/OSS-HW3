@@ -1,5 +1,5 @@
 import './App.css';
-// import Menu from './Components/Task4/Menu';
+import Menu from './Components/Task4/Menu';
 import ContentWrapper from './Components/UI/ContentWrapper';
 import FontType from './Components/Task1/FontTypes';
 import InfoBlock from './Components/UI/InfoBlock';
@@ -15,6 +15,9 @@ const showMessageHandler = (e) => {
 const App = () => {
    return (
       <div className="container">
+         <ContentWrapper>
+            <Menu></Menu>
+         </ContentWrapper>
          <ContentWrapper>
             <h2>Task #1: FONT TYPES</h2>
             <div className="font-type-wrapper">
